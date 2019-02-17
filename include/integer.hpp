@@ -12,10 +12,10 @@ private:
   int sign;
   vector<int> digitArr;
 public:
-  explicit Integer();
+  Integer();
   explicit Integer(int a);
   explicit Integer(string const & a);
-  explicit Integer(Integer const & a);
+  Integer(Integer const & a);
   Integer & operator=(string const & a);
   Integer & operator=(Integer const & other);
   ~Integer() = default;

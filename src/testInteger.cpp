@@ -43,13 +43,28 @@ int main() {
   cout << "d" << endl;
   view(d);
 
-  Integer f;
-  f = d;
+  Integer f = d;
   cout << "f" << endl;
   view(f);
 
-  Integer g = f;
+  Integer g;
+  g = f;
   cout << "g" << endl;
   view(g);
+
+  Integer h = Integer("-7865");
+  cout << "h" << endl;
+  view(h);
+
+  Integer i;
+  i = "-4562867";
+  cout << "i" << endl;
+  view(i);
+
+  /*
+  Integer j = "-8672866"; // Fails because the compiler wants to try to convert "-8672866" -> int so that it can then call Integer::Integer(int).
+  cout << "j" << endl;
+  view(j);
+  */
 
 }
